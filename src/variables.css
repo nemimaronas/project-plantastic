@@ -1,0 +1,18 @@
+:root {
+  --color-dark: 23, 23, 23;
+  --color-light: 245, 239, 230;
+  --color-white: 255, 255, 255;
+  --color-primary: 93, 62, 27;
+  --color-primary-light: 111, 96, 79;
+  --color-secondary: 26, 77, 46;
+  --color-secondary-light: 79, 111, 82;
+  --page-width: 160rem;
+  --page-width--narrow: 9.4rem;
+  --padding-lg: 4rem;
+  --padding-sm: 2rem;
+  --font-heading-family: 'Helvetica Neue', sans-serif;
+  --font-body-family: 'Helvetica Neue', sans-serif;
+  --grid-gap-lg: 1.2rem;
+  --grid-gap-sm: calc(var(--grid-gap-lg) * .8);
+  --media-radius: .8rem;
+}

@@ -1,0 +1,23 @@
+.card--link {
+  text-decoration: unset;
+  color: rgb(var(--color-dark));
+}
+.card__info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: .8rem;
+}
+
+.card__info > * {
+  margin: 0;
+}
+
+.card__info--title,
+.card__info--price {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.4em;
+}
