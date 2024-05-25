@@ -1,17 +1,22 @@
 import {useEffect,useState} from 'react';
+import { useParams } from 'react-router-dom';
 import ItemList from "../ItemList/ItemList";
 
 const ItemListContainer = ({ title }) => {
-
+  const { id } = useParams();
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const response = await fetch('./data/products.json');
+        const response = await fetch('/data/products.json');
         const data = await response.json();
-        setItems(data);
+        const filteredItems = id ? data.filter(item => item.categoryId === parseInt(id)) : data;
+
+        setItems(filteredItems);
+        setLoading(false);
+        
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
@@ -22,7 +27,7 @@ const ItemListContainer = ({ title }) => {
     setTimeout(() => {
       fetchItems();
     }, 2000);
-  }, []);
+  }, [id]);
 
   return (
     <div className="item-list-container page-width">

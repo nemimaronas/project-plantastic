@@ -179,6 +179,11 @@ h6, .h6 {
   }
 }
 
+a.grid__item {
+  text-decoration: unset;
+  color: rgb(var(--color-dark));
+}
+
 .grid--1-col .grid__item {
   width: 100%;
   max-width: 100%;
@@ -288,6 +293,10 @@ h6, .h6 {
   border-radius: var(--button-radius);
   font-size: 1.4rem;
   text-transform: uppercase;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .button--primary {

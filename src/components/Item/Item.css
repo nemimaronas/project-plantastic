@@ -1,3 +1,9 @@
+.item-detail {
+  max-width: 40rem;
+  width: 100%;
+  margin: 4rem auto;
+}
+
 .item--link {
   text-decoration: unset;
   color: rgb(var(--color-dark));
@@ -28,4 +34,28 @@
   line-height: 1.4em;
   opacity: .6;
   grid-column: 1 / 3;
+}
+
+.item-count {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.item-count__controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: rgba(var(--color-primary), .1);
+  padding: 1rem;
+  border-radius: var(--button-radius);
+}
+
+.item-count__controls > * {
+  display: block;
+  min-width: 2.4rem;
+  text-align: center;
+  border: 0;
+  box-shadow: unset;
 }
