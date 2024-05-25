@@ -15,4 +15,5 @@
   --grid-gap-lg: 1.2rem;
   --grid-gap-sm: calc(var(--grid-gap-lg) * .8);
   --media-radius: .8rem;
+  --button-radius: .6rem;
 }

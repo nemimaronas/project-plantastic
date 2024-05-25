@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Maranta Lemon Lime",
+    "price": 29.99,
+    "description": "Planta para interiores hermosa y única, que al igual que sus primas fascinator, tricolor, etc, pliega las hojas por la noche. Hojas de color verde y verdelima, con el característico patrón de marantha. Las mismas características de cultivo que todo el género.",
+    "category": "Plants",
+    "stock": 4,
+    "pictureUrl": "/images/maranta-lemon-lime.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Olivo Bonsai",
+    "price": 39.99,
+    "description": "El Olivo Bonsai es una planta ideal para decorar interiores y exteriores. Su pequeño tamaño y la belleza de sus hojas verdes hacen que sea muy apreciado.",
+    "category": "Plants",
+    "stock": 3,
+    "pictureUrl": "/images/olivo-bonsai.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Lirios Rosas",
+    "price": 24.99,
+    "description": "Hermosos lirios rosas que alegrarán cualquier espacio con su color vibrante y su agradable fragancia.",
+    "category": "Flowers",
+    "stock": 7,
+    "pictureUrl": "/images/time-of-sunset.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Orquídea Blanca",
+    "price": 42.99,
+    "description": "La Orquídea Blanca es un símbolo de elegancia y pureza. Perfecta para regalar en ocasiones especiales o para decorar cualquier hogar.",
+    "category": "Flowers",
+    "stock": 5,
+    "pictureUrl": "/images/orquidea.jpeg"
+  }
+]

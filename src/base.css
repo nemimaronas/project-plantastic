@@ -280,3 +280,68 @@ h6, .h6 {
 .media--landscape {
   padding-bottom: 66.6%;
 }
+
+.button {
+  padding: 1rem;
+  min-width: 4.8rem;
+  min-height: 3.2rem;
+  border-radius: var(--button-radius);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.button--primary {
+  background-color: rgb(var(--color-primary));
+  border: 1px solid rgb(var(--color-primary));
+  color: rgb(var(--color-light));
+}
+
+.button--secondary {
+  background-color: transparent;
+  border: 1px solid rgb(var(--color-primary));
+  color: rgb(var(--color-primary));
+}
+
+.button--unset {
+  padding: 0;
+  border: 0;
+  min-width: unset;
+  min-height: unset;
+  background: transparent;
+}
+
+.loading-fade-in {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(var(--color-light));
+  border-radius: var(--media-radius);
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+}
+
+@keyframes fadeIn { 
+  from { 
+    opacity:0;
+  } to { 
+    opacity:1;
+  } 
+}     
+
+.loading-fade-in span {
+  opacity:0; 
+  animation:fadeIn ease-out 2s infinite;  
+}              
+
+.loading-fade-in span:nth-of-type(1)  { 
+  animation-delay: 0.5s;             
+}                
+
+.loading-fade-in span:nth-of-type(2)  { 
+  animation-delay: 1s;
+}
+
+.loading-fade-in span:nth-of-type(3) { 
+  animation-delay: 1.5s;
+}

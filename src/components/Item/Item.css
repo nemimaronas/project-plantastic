@@ -1,8 +1,9 @@
-.card--link {
+.item--link {
   text-decoration: unset;
   color: rgb(var(--color-dark));
 }
-.card__info {
+
+.item__info {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 1rem;
@@ -10,14 +11,21 @@
   margin-top: .8rem;
 }
 
-.card__info > * {
+.item__info>* {
   margin: 0;
 }
 
-.card__info--title,
-.card__info--price {
+.item__info--title,
+.item__info--price {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 1.4rem;
   line-height: 1.4em;
+}
+
+.item__info--description {
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  opacity: .6;
+  grid-column: 1 / 3;
 }
